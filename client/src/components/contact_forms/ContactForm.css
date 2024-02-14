@@ -1,0 +1,12 @@
+.aa:focus{
+   border:0;
+   outline:none;
+
+   background:transparent;
+}
+.aa{
+    border:0;
+}
+.form{
+    background: blue;
+}
