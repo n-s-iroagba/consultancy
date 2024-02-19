@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
-import './NavbarComponent.css'
+import '../assets/Styles.css'
 
 const GoldNavbar = () => {
   const [expanded, setExpanded] = useState(false);

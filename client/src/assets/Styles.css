@@ -1,0 +1,165 @@
+.circular-icon-border{
+  width: 1cm; /* Set the width of the circular container */
+height: 1cm; /* Set the height of the circular container */
+display: flex;
+align-items: center;
+justify-content: center;
+border: 2px solid #333; /* Border style: 2px solid, color: #333 (dark gray) */
+border-radius: 50%
+}
+
+.round-button{
+  background-color: var(--primary-color);
+  width: 5cm;
+  height:1.2cm;
+  border:0;
+  border-top-right-radius:50px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url('./images/chip.avif');
+    height: 14cm;
+    width:100vw;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2cm;
+    padding-bottom: 1cm;
+    border-bottom: 10px solid var(--primary-color);  
+}
+.head-writeup{
+    position: absolute;
+    top: 0cm;
+    width: 100%;
+    height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);  
+     padding-top: 1.5cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+} 
+.main-writeup{
+    font-size: 40px;
+    color: var(--primary-color);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+}
+.sub-writeup{
+    color: white;
+    font: 2vw;
+    text-align: center;
+}
+.horizontal-flex{
+    display: flex;
+}
+.text-gold{
+    color:var(--primary-color)
+}
+.m-right-text{
+    margin-right:0.5cm;
+}
+
+.navbar-wrapper .background-primary {
+    background-color: var(--primary-color);
+  }
+
+.navbar-wrapper .padding-side{
+  padding-left: 0.7cm;
+  padding-right: 0.7cm;
+  @media (min-width: 768px) {
+      padding-left: 1.3cm;
+      padding-right: 1.3cm;
+    }
+}
+.padding-side-responsive{
+    padding-left: 0.7cm;
+    padding-right: 0.7cm;
+    @media (min-width: 768px) {
+        padding-left: 5cm;
+        padding-right: 5cm;
+      }
+  }
+  .padding-side{
+    padding-left: 0.7cm;
+    padding-right: 0.7cm;
+    @media (min-width: 768px) {
+        padding-left: 1.3cm;
+        padding-right: 1.3cm;
+      }
+  }
+.solution1{
+    background-image:url('./images/1stsolutionjpeg');
+    width: 8cm;
+    height: 8cm
+}
+.solution2{
+    background-image: url('./images/pentest.jpg');
+    width: 8cm;
+    margin-left: 0.2cm;
+  
+}
+.text-secondary{
+    color:white
+}
+.scroll-items{
+width: clamp(150vw,200*1vw,300vw);
+display:flex;
+
+}
+.scroll-items-wrapper{
+    width: auto; /* Set the width of the parent container */
+    height: 8.5cm; /* Set the height of the parent container */
+    overflow-x: scroll;
+    overflow-y: hidden;
+    
+  
+}
+img{
+    height: 95%;
+}
+.bold-text {
+    
+    margin-bottom: 0%;
+    font-weight: 700;
+    
+  
+
+}
+/* .padding{
+    padding-left: 3vw;
+    padding-right: 3vw;
+} */
+.wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1cm;
+}
+.text-bar{
+    width:2cm;
+    height:0.2cm;
+    background-color:var(--primary-color);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.column-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 3cm;
+}
+footer{
+    background-color: gray;
+}

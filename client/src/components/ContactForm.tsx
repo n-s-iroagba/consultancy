@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row';
 import * as formik from 'formik';
 import * as yup from 'yup';
 import { useState } from 'react';
-import './ContactForm.css'
+import '../assets/Styles.css'
 
 function ContactForm() {
   const { Formik } = formik;

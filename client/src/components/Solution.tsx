@@ -1,6 +1,6 @@
 import React from 'react'
-import './SolutionCarousel.css'
-import Writeup from '../writeup/Writeup'
+import '../assets/Styles.css'
+import Writeup from './Writeup'
 interface SingleImageProps{
     solutionImage:string,
     writeup: string

@@ -1,5 +1,5 @@
 import React from 'react'
-import './Writeup.css'
+import '../assets/Styles.css'
 const Writeup: React.FC<{head:string,writeup:string}> =(props)=>{
  return<div>
  <div className='wrapper'>

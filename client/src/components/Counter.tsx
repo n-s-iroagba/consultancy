@@ -1,6 +1,6 @@
 import React, { useState, useEffect,useRef} from 'react';
 import {Row, Col} from 'react-bootstrap'
-
+import '../assets/Styles.css'
 const Counter = () => {
   const [clientCount, setClientCount] = useState(0);
   const [assetCount, setAssetCount] = useState(0);
