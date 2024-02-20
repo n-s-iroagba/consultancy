@@ -18,7 +18,7 @@ const SolutionCarousel: React.FC = () => {
             
                 <Carousel className='carousel padding-side-responsive'>
                     {classes.map((className, index) => (
-                        <Carousel.Item key={index}>
+                        <Carousel.Item key={index} interval={1000}>
                             <Card className={className} style={{ backgroundSize: 'cover', backgroundPosition: 'center', height: '300px' }}>
                                 <Card.Body className="d-flex flex-column align-items-center justify-content-center text-light">
                                     <h3>{writeups[index]}</h3>
