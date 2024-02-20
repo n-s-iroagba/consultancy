@@ -10,7 +10,7 @@ const VisitUs = ()=>{
       return (
         <Container >
         
-        <div className='d-flex flex-column justify-content-start align-items-center'>
+        <div className='d-flex flex-column justify-content-start align-items-center margin-top'>
           <h2>Visit Us</h2>
           <div className='text-bar'></div>
           </div>
