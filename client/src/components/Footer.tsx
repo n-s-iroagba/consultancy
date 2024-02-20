@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../assets/Styles.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 
 const Footer = () => {
@@ -46,14 +47,24 @@ const Footer = () => {
            {/* 1 column */}
             <Row className="mt-4">
               <Col xs={12}>
-                <p style={{}}>+44 (0)3308 285 883</p>
+                <Row>
+                  <Col xs={3}>
+                  <FontAwesomeIcon className='icon-size' icon= {faInstagram}/>
+                  </Col>
+                  <Col  xs={3}>
+                  <FontAwesomeIcon className='icon-size' icon= {faLinkedin}/>
+                  </Col>
+                  <Col  xs={3}>
+                  <FontAwesomeIcon className='icon-size' icon= {faFacebook}/>
+                  </Col>
+                  <Col  xs={3}>
+                  <FontAwesomeIcon className='icon-size' icon = {faTwitter}/>
+                  </Col>
+
+                </Row>
+                <p className='margin-top'>+44 (0)3308 285 883</p>
                 <p>hello@elijahklitzcybersecurity.com</p>
               </Col>
-            </Row>
-            <Row>
-              {/* <FontAwesomeIcon/>
-               <FontAwesomeIcon/>
-              <FontAwesomeIcon/> */}
             </Row>
           </Col>
         </Row>

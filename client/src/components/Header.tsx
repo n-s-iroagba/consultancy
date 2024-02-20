@@ -1,6 +1,6 @@
 import React from 'react'
 import '../assets/Styles.css'
-import ContactButton from './ContactButton'
+import {ContactButton} from './Buttons'
 import { ReactTyped } from "react-typed";
 
 

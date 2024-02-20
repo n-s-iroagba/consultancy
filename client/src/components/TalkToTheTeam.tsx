@@ -1,17 +1,31 @@
 import React from 'react';
-import { Container, Button } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
+import { ContactButton } from './Buttons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const TalkToTheTeam = () => {
   return (
-    <Container className="my-5">
+    <Container >
+    <div className='d-flex flex-column justify-content-start align-items-center'>
       <h2>Talk to the Team</h2>
+      <div className='text-bar'></div>
+      </div>
+      <div className='padding-side'>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id orci sed velit maximus consectetur.
-        Etiam non tellus orci. Curabitur non felis ac eros consectetur pretium. Donec quis libero non nulla
-        eleifend feugiat. Suspendisse potenti. Nam tempor, elit et placerat iaculis, nulla felis lacinia dui,
-        sit amet rutrum nisi mi eu magna.
+      We value your input and would greatly appreciate hearing from you. Your feedback is important to us as we strive to continuously improve our services. Please feel free to reach out to us with any questions, concerns, or suggestions you may have. We look forward to hearing from you.
       </p>
-      <Button variant="primary">Get in Touch</Button>
+      <div>
+        <FontAwesomeIcon className='icon-size' icon={faEnvelope}/>
+        <p>ElijahKlitz@donald.com</p>
+      </div>
+      <div>
+        <FontAwesomeIcon className='icon-size' icon={faPhone}/>
+        <p>+123-457-8955</p>
+      </div>
+    <ContactButton/>
+    </div>
     </Container>
   );
 };

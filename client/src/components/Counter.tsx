@@ -39,12 +39,12 @@ const Counter = () => {
 
     if (isComponentVisible) {
       clientIntervalId = setInterval(() => {
-        setClientCount(prevCounter => (prevCounter < 500000 ? prevCounter + 100000 : prevCounter));
+        setClientCount(prevCounter => (prevCounter < 200 ? prevCounter + 4 : prevCounter));
       }, 0.5);
 
       assetIntervalId = setInterval(() => {
-        setAssetCount(prevCounter => (prevCounter < 300000000 ? prevCounter + 1000000 : prevCounter));
-      }, 0.1);
+        setAssetCount(prevCounter => (prevCounter < 3000 ? prevCounter + 60 : prevCounter));
+      }, 0.5);
     }
 
     return () => {
@@ -54,13 +54,13 @@ const Counter = () => {
   }, [isComponentVisible]);
 
   return (
-    <div ref={componentRef} className='shallow-padding-side'>
-      <Row className='background-secondary'>
-        <Col className='element some-padding' sm={12} lg={6}>
-          <h2 className='text-center heavy-font'> {clientCount}+</h2><h3 className='text-center'>investors worldwide</h3>
+    <div ref={componentRef} className='background-primary counter padding-side'>
+      <Row className=''>
+        <Col className='counter-element' sm={12} lg={6}>
+          <h2 className='text-center heavy-font'> {clientCount}+</h2><h3 className='text-center'>Clients worldwide</h3>
         </Col>
-        <Col  className=' some-padding'sm={12} lg={6}>
-          <h2 className='text-center heavy-font'>${assetCount}+</h2><h3 className='text-center'> under our management</h3>
+        <Col  className='counter-element2'sm={12} lg={6}>
+          <h2 className='text-center heavy-font'>{assetCount}+</h2><h3 className='text-center'> Infrastructures under management</h3>
         </Col>
       </Row>
     </div>

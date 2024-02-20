@@ -9,8 +9,8 @@ import WhoWeAre from '../components/WhoWeAre'
 import Awards from '../components/Awards'
 import TalkToTheTeam from '../components/TalkToTheTeam'
 import VisitUs from '../components/VisitUs'
-import Team from '../components/Team'
-import UpComingEvents from '../components/UpComingEvents'
+import Events from '../components/Events'
+
 
 const Home: React.FC = () => {
 
@@ -21,8 +21,7 @@ const Home: React.FC = () => {
             <Solution />
             <Awards/>
             <Counter />
-            {/* <Team/> */}
-            <UpComingEvents/>
+            <Events/>
             <TalkToTheTeam/>
             <VisitUs/>
             <Footer />
