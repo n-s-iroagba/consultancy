@@ -5,13 +5,14 @@ import { ReactTyped } from "react-typed";
 
 
 const HeadText = () => (
-  <div className='horizontal-flex'>
-    <h1 className='text-gold m-right-text'> We're {' '}</h1>
+  <div className='d-flex'>
+    <h1 className='text-gold m-right-text'> WE'RE {' '}</h1>
     <h1 className='text-light'>
       <ReactTyped
         startWhenVisible
+        loop
         strings={[
-          "Elijah Klitz",
+          "ELIJAH KLITZ",
         ]}
         typeSpeed={120}
       />
@@ -23,6 +24,8 @@ const FirstWriteup: React.FC = () => {
 
   return <>
     <div className='head'>
+    <div className='head-wrapper'>  </div>
+
       <div className='head-writeup'>
         <HeadText />
         <h1 className='sub-writeup'>
@@ -33,8 +36,7 @@ const FirstWriteup: React.FC = () => {
         </h1>
         <ContactButton />
       </div>
-     
-    </div>
+    </div>   
   </>
 }
 export default FirstWriteup

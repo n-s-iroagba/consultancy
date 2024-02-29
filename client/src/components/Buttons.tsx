@@ -3,6 +3,7 @@ import React from 'react'
 import {  faEnvelope,faArrowDown} from '@fortawesome/free-solid-svg-icons'
 import '../assets/Styles.css'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
+import { useNavigate } from 'react-router-dom'
 
 const Button: React.FC<{label:string,icon:IconProp}> =({label, icon})=>{
     return<>
@@ -15,11 +16,15 @@ const Button: React.FC<{label:string,icon:IconProp}> =({label, icon})=>{
    
     </>
 }
+export default Button
 
 
 export const  ContactButton :React.FC = ()=>{
-    return<Button label='Get in touch' icon ={faEnvelope}/>
+    const navigate = useNavigate()
+
+    return<div onClick={()=>navigate('/contact-us')}><Button label='Get in touch' icon ={faEnvelope}/></div>
 }
 export const  BookingButton :React.FC = ()=>{
-    return<Button label='Book your seat' icon ={faArrowDown}/>
+    const navigate = useNavigate()
+    return<div onClick={()=>navigate('/events')}><Button label='Book your seat' icon ={faArrowDown}/></div>
 }

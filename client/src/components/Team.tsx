@@ -1,35 +1,44 @@
 import React from 'react';
-import { Carousel, Card, Container } from 'react-bootstrap';
-
+import { Card, Container } from 'react-bootstrap';
+import logo from '../assets/images/logo.avif'
+import { Row, Col } from 'react-bootstrap';
+import '../assets/Styles.css'
 interface TeamMember {
   name: string,
   position: string,
-  bio: string,
-  image: string,
+  image: any,
 }
 
-interface TeamCarouselProps {
-  teamMembers: TeamMember[];
-}
-
-const TeamCarousel: React.FC<TeamCarouselProps> = ({ teamMembers }) => {
+const TeamCarousel: React.FC = () => {
+  const teamMembers =[{
+    name: 'Elijah Klitz',
+    position: 'Chief Executive Officer',
+    image:logo
+  
+  }]
   return (
     <Container>
-      <Carousel>
-        team
+     <div className='d-flex flex-column justify-content-center align-items-center py-4'>
+      <h2>The Team</h2>
+      <div className='text-bar'></div>
+      </div>
+    <Row>
+      <Col lg={3}>
+
         {teamMembers.map((member:TeamMember, index:number) => (
-          <Carousel.Item key={index}>
+
             <Card>
-              <Card.Img variant="top" src={member.image} />
+              <Card.Img className='w-100 rounded-circle border px-4 py-4 round-border' variant="top" src={member.image} />
               <Card.Body>
                 <Card.Title>{member.name}</Card.Title>
                 <Card.Text>{member.position}</Card.Text>
-                <Card.Text>{member.bio}</Card.Text>
               </Card.Body>
             </Card>
-          </Carousel.Item>
+
         ))}
-      </Carousel>
+  
+      </Col>
+      </Row>
     </Container>
   );
 };

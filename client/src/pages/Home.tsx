@@ -10,6 +10,9 @@ import Awards from '../components/Awards'
 import TalkToTheTeam from '../components/TalkToTheTeam'
 import VisitUs from '../components/VisitUs'
 import Events from '../components/Events'
+import Team from '../components/Team'
+import Cerfication from '../components/Certification'
+import Client from '../components/Client'
 
 
 const Home: React.FC = () => {
@@ -20,7 +23,10 @@ const Home: React.FC = () => {
          <WhoWeAre/>
             <Solution />
             <Awards/>
+            <Cerfication/>
+            <Client/>
             <Counter />
+            <Team/>
             <Events/>
             <TalkToTheTeam/>
             <VisitUs/>
