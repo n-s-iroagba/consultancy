@@ -40,11 +40,11 @@ const Counter = () => {
     if (isComponentVisible) {
       clientIntervalId = setInterval(() => {
         setClientCount(prevCounter => (prevCounter < 200 ? prevCounter + 4 : prevCounter));
-      }, 0.5);
+      }, 50);
 
       assetIntervalId = setInterval(() => {
         setAssetCount(prevCounter => (prevCounter < 3000 ? prevCounter + 60 : prevCounter));
-      }, 0.5);
+      }, 50);
     }
 
     return () => {

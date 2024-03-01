@@ -136,12 +136,14 @@ function ContactForm() {
         </div>
         </Form>
       {showPopup && (
+        <div className='d-flex justify-content-center align-items-center bg-danger w-100'>
         <div className="d-flex flex-column align-items-center justify-content-evenly popup">
          <div className='circular-icon-border'>
         <FontAwesomeIcon icon={faCheck} beatFade />
         </div>
           <p className='text-center'>Your message was delivered, you will hear from us in 24 hours</p>
           <button className='round-button background-primary' onClick={()=>{navigate('/')}}>Continue</button>
+        </div>
         </div>
       )}</div>
   );

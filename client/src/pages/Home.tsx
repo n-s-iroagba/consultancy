@@ -8,7 +8,6 @@ import Counter from '../components/Counter'
 import WhoWeAre from '../components/WhoWeAre'
 import Awards from '../components/Awards'
 import TalkToTheTeam from '../components/TalkToTheTeam'
-import VisitUs from '../components/VisitUs'
 import Events from '../components/Events'
 import Team from '../components/Team'
 import Cerfication from '../components/Certification'
@@ -29,7 +28,6 @@ const Home: React.FC = () => {
             <Team/>
             <Events/>
             <TalkToTheTeam/>
-            <VisitUs/>
             <Footer />
             </>  
     )

@@ -10,7 +10,6 @@ const HeadText = () => (
     <h1 className='text-light'>
       <ReactTyped
         startWhenVisible
-        loop
         strings={[
           "ELIJAH KLITZ",
         ]}

@@ -1,32 +1,27 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 import { ContactButton } from './Buttons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
+import MapComponent from './MapComponent';
 
 const TalkToTheTeam = () => {
   return (
-    <Container >
-    <div className='d-flex flex-column justify-content-start align-items-center'>
+    <div className='d-flex flex-column justify-content-center align-items-center px-4 pb-4'>
       <h2>Talk to the Team</h2>
       <div className='text-bar'></div>
-      </div>
-      <div className='padding-side'>
       <p>
       We value your input and would greatly appreciate hearing from you. Your feedback is important to us as we strive to continuously improve our services. Please feel free to reach out to us with any questions, concerns, or suggestions you may have. We look forward to hearing from you.
       </p>
-      <div>
         <FontAwesomeIcon className='icon-size' icon={faEnvelope}/>
         <p>ElijahKlitz@donald.com</p>
-      </div>
-      <div>
         <FontAwesomeIcon className='icon-size' icon={faPhone}/>
-        <p>+123-457-8955</p>
-      </div>
+        <p>+123-457-8955</p> 
     <ContactButton/>
+    <FontAwesomeIcon className='pt-3' icon ={faLocationDot}/> 
+    <p className='pt-1'>Address in california</p>
+    <MapComponent/>  
     </div>
-    </Container>
   );
 };
 

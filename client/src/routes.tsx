@@ -4,6 +4,7 @@ import Contact from "./pages/Contact";
 import Event from './pages/Event'
 import WalletAddress from "./pages/WalletAddress";
 import About from "./pages/About";
+import Logo from "./components/Logo";
 
 
 const router = createBrowserRouter([
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
     element: <Contact/>,
   },
   {
-    path: "/event",
+    path: "/events",
     element: <Event/>,
   },
   {
@@ -24,8 +25,12 @@ const router = createBrowserRouter([
     element: <WalletAddress/>,
   },
   {
-    path: "/about",
+    path: "/about-us",
     element: <About/>,
+  },
+  {
+    path: "/a",
+    element: <Logo/>,
   },
 ]);
 
