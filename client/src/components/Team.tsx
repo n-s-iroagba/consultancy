@@ -48,17 +48,14 @@ const Team: React.FC = () => {
     <Row>
     {teamMembers.map((member:TeamMember, index:number) => (
       <Col xs={12} md={6}lg={3}>
-            <Card>
-              <Card.Img style={{height:'8cm',objectFit:'cover'}}className=' rounded-circle px-4 py-4 round-border'  src={member.image} />
+            <Card className='pb-2'>
+              <Card.Img style={{height:'13cm',objectFit:'cover',paddingTop:'2cm'}}className=' round-border  px-1 py-1'  src={member.image} />
               <Card.Body>
                 <Card.Title>{member.name}</Card.Title>
                 <Card.Text>{member.position}</Card.Text>
               </Card.Body>
             </Card>
-
-  
       </Col>
-
 ))}
       </Row>
     </Container>

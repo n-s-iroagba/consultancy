@@ -62,7 +62,7 @@ const Footer = () => {
                   </Col>
 
                 </Row>
-                <p className='margin-top'>+44 (0)3308 285 883</p>
+                <p className='margin-top'>+1-951-239-0523</p>
                 <p>hello@elijahklitzcybersecurity.com</p>
               </Col>
             </Row>
@@ -72,12 +72,12 @@ const Footer = () => {
            {/* bottom */}
           <Col md={6}>
           <p className="text-md-right">
-              ELijah Klitz  is the trading name of Elijah Cyber Security Limited, a company registered in England and Wales.
+              ELijah Klitz  is the tradename of Elijah Cyber Security Limited, a company registered in England and Wales.
             </p>
             <p className="text-md-right">
               VAT Registration No: 386809347 | Company Registration No: 11101195.
             </p>
-            <p className="text-md-right">Registered Office: 40 Caversham Road, Reading, RG1 7EB</p>
+            <p className="text-md-right">Registered Office: 1055 E Colorado Blvd.,5th Floor,Pasedena,CA 91106</p>
   
           </Col>
           

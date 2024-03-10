@@ -152,7 +152,7 @@ border-radius: 50%
       } */
   }
   .card .round-border{
-    background-color: var(--primary-color);
+    background-color: var(--primary-color)
   }
   .form .custom-input{
     border:0;

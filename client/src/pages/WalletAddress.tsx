@@ -38,9 +38,6 @@ function WalletAddress() {
       <div className="d-flex padding-side-responsive flex-column align-items-center pt-4">
         <BigLogo/>
         <p className="py-4 px-4 text-center">Copy the wallet address below and make a deposit of $3,000 to the address, you will receive an email notification on receipt of your payment.</p>
-        
-        
-        
         <Form  className='py-5 px-2 form background-primary w-100 ' noValidate onSubmit={handleSubmit}>
             <Form.Group className='mb-3' as={Col} lg="12" controlId="validationFormik01">
               <Form.Label>Payment Wallet ({walletType})*</Form.Label>

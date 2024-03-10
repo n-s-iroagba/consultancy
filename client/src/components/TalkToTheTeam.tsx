@@ -14,12 +14,12 @@ const TalkToTheTeam = () => {
       We value your input and would greatly appreciate hearing from you. Your feedback is important to us as we strive to continuously improve our services. Please feel free to reach out to us with any questions, concerns, or suggestions you may have. We look forward to hearing from you.
       </p>
         <FontAwesomeIcon className='icon-size' icon={faEnvelope}/>
-        <p>ElijahKlitz@donald.com</p>
+        <p>contact@elijahklitz.tech</p>
         <FontAwesomeIcon className='icon-size' icon={faPhone}/>
-        <p>+123-457-8955</p> 
+        <p>+1-951-239-0523</p> 
     <ContactButton/>
     <FontAwesomeIcon className='pt-3' icon ={faLocationDot}/> 
-    <p className='pt-1'>Address in california</p>
+    <p className='pt-1'>1055 E Colorado Blvd.,5th Floor,Pasedena,CA 91106</p>
     <MapComponent/>  
     </div>
   );

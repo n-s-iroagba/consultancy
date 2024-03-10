@@ -35,12 +35,12 @@ const About = ()=>{
       <p className="px-4">{writeup}</p>
       <Team/>
       <FontAwesomeIcon className='icon-size' icon={faEnvelope}/>
-        <p>ElijahKlitz@donald.com</p>
+        <p>contact@elijahKlitz.tech</p>
         <FontAwesomeIcon className='icon-size' icon={faPhone}/>
-        <p>+123-457-8955</p> 
+        <p>+1-951-239-0523</p> 
     <ContactButton/>
     <FontAwesomeIcon className='pt-3' icon ={faLocationDot}/> 
-    <p className='pt-1'>Address in california</p>
+    <p className='pt-1'>1055 E Colorado Blvd.,5th Floor,Pasedena,CA 91106</p>
     <MapComponent/>  
       </div>
     
