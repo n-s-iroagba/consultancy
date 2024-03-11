@@ -10,6 +10,7 @@ import '../assets/Styles.css'
 interface TeamMember {
   name: string,
   position: string,
+  position2:string,
   image: any,
 }
 
@@ -17,24 +18,28 @@ const Team: React.FC = () => {
   const teamMembers =[{
     name: 'Elijah Klitz',
     position: 'Chief Executive Officer',
+    position2:' Chief Technical Officer',
     image:klitz
   
   },
   {
     name: 'Anna Legend',
     position: 'Chief Operations Officer',
+    position2:'',
     image:team1
   
   }, 
   {
     name: 'Paschal Singh',
-    position: 'Chief Technical Officer',
+    position: 'Chief Financial Officer',
+    position2:'',
     image:team2
   
   }
   ,{
     name: 'Emmanuel Singh',
     position: 'Managing Director',
+    position2:'',
     image:team3
   
   }]
@@ -45,14 +50,16 @@ const Team: React.FC = () => {
       <div className='text-bar'></div>
       <p className='text-center'>Our Management Team are the brains behind our success</p>
       </div>
-    <Row>
+    <Row className='gy-4'>
     {teamMembers.map((member:TeamMember, index:number) => (
       <Col xs={12} md={6}lg={3}>
-            <Card className='pb-2'>
+            <Card className=''>
               <Card.Img style={{height:'13cm',objectFit:'cover',paddingTop:'2cm'}}className=' round-border  px-1 py-1'  src={member.image} />
-              <Card.Body>
+              <Card.Body className='text-center'>
                 <Card.Title>{member.name}</Card.Title>
-                <Card.Text>{member.position}</Card.Text>
+               <> <Card.Text>{member.position}</Card.Text></>
+                <>{member.position2!==''?<Card.Text>&</Card.Text>:<Card.Text className='text-transparent'>a</Card.Text>}</>
+                <>{member.position2!==''?<Card.Text>{member.position2}</Card.Text>:<Card.Text className='text-transparent'>a</Card.Text>}</>
               </Card.Body>
             </Card>
       </Col>

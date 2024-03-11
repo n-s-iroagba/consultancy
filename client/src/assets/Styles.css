@@ -127,6 +127,13 @@ border-radius: 50%
     }
 }
 
+.card .text-transparent{
+    color: transparent;
+}
+.card .card-text{
+    margin-bottom: 0;
+}
+
 .navbar-wrapper .padding-side{
   padding-left: 0.7cm;
   padding-right: 0.7cm;

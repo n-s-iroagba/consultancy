@@ -18,8 +18,8 @@ const TalkToTheTeam = () => {
         <FontAwesomeIcon className='icon-size' icon={faPhone}/>
         <p>+1-951-239-0523</p> 
     <ContactButton/>
-    <FontAwesomeIcon className='pt-3' icon ={faLocationDot}/> 
-    <p className='pt-1'>1055 E Colorado Blvd.,5th Floor,Pasedena,CA 91106</p>
+    <FontAwesomeIcon className='pt-5' icon ={faLocationDot}/> 
+    <p className='pt-2 text-center word-wrap'>1055 E Colorado Blvd.,5th Floor,Pasedena,CA 91106.</p>
     <MapComponent/>  
     </div>
   );
