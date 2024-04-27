@@ -13,7 +13,7 @@ interface Event {
 const Events: React.FC= () => {
   const events = [ {
     eventName: 'CNI Cyber Security Summit 2024',
-    date: '23rd March',
+    date: '23rd May',
   venue: 'East London',
   details: `Join us for the inaugural CNI Cyber Security Summit at the Radisson Blu Bloomsbury Street Hotel Central London.
   Designed specifically for senior decision makers working within the UK’s Critical National Infrastructure sectors, this  event will address the latest trends, 
