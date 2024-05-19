@@ -16,7 +16,7 @@ interface TeamMember {
 
 const Team: React.FC = () => {
   const teamMembers =[{
-    name: 'Elijah Klitz',
+    name: 'Elijah Winslow',
     position: 'Chief Executive Officer',
     position2:' Chief Technical Officer',
     image:klitz
