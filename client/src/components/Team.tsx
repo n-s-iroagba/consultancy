@@ -2,8 +2,7 @@ import React from 'react';
 import { Card, Container } from 'react-bootstrap';
 import klitz from '../assets/images/mrklitz.jpeg'
 import team1 from '../assets/images/team1.jpeg'
-import team2 from '../assets/images/team2.jpeg'
-import team3 from '../assets/images/team3.jpeg'
+
 
 import { Row, Col } from 'react-bootstrap';
 import '../assets/Styles.css'
@@ -37,7 +36,7 @@ const Team: React.FC = () => {
       <div className='text-bar'></div>
       <p className='text-center'>Our Management Team are the brains behind our success</p>
       </div>
-    <Row className='gy-4'>
+    <Row className='gy-4 d-flex justify-content-center'>
     {teamMembers.map((member:TeamMember, index:number) => (
       <Col xs={12} md={6}lg={3}>
             <Card className=''>
