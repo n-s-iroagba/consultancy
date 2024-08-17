@@ -29,20 +29,7 @@ const Team: React.FC = () => {
     image:team1
   
   }, 
-  {
-    name: 'Paschal Singh',
-    position: 'Chief Financial Officer',
-    position2:'',
-    image:team2
-  
-  }
-  ,{
-    name: 'Emmanuel Singh',
-    position: 'Managing Director',
-    position2:'',
-    image:team3
-  
-  }]
+ ]
   return (
     <Container>
      <div className='d-flex flex-column justify-content-center align-items-center py-4'>
